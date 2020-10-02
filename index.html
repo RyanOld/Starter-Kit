@@ -2,13 +2,58 @@
 <html lang="id">
   <head>
     <meta charset="utf-8">
-    <title>[Title In Browser Tab and Bookmark Bar]</title>
+    <title>Exclusive Random Numbers Generator</title>
     <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width= device-width, initial-scale= 1">
-    <meta name="description" content="[Useful Description. Mainly Used in Link Sharing(quickload of sorts)">
+    <meta name="description" content="A tool for making things like group division and assignments division">
     <script defer src="script.js"></script>
   </head>
   <body>
+    <header class="head">
+      <h1>Pembagi Random 2 Dimensi</h1>
+      <p>Harap hanya masukkan bilangan bulat positif</p>
+    </header>
+    <section class="form">
+      <form>
+        <fieldset class="row-and-column">
+          <h2>Baris dan Kolom</h2>
+          <label for="row">
+            <p>Jumlah Baris :</p>
+            <input type="tel" id="row" name="row">
+          </label><br>
+          <label for="column">
+            <p>Jumlah Kolom :</p>
+            <input type="tel" id="column" name="column">
+          </label>
+        </fieldset>
+        <fieldset class="range">
+          <h2>Range</h2>
+          <label for="range-min">
+            <p>Mulai dari :</p>
+            <input type="tel" id="range-min" name="range-min"><br>
+          </label>
+          <label for="range-max">
+            <p>Hingga :</p>
+            <input type="tel" id="range-max" name="range-max">
+          </label>
+          <label for="interval">
+            <p>Loncat : </p>
+            <input type="tel" id="interval" name="interval">
+          </label>
+        </fieldset>
+        <!-- <fieldset class="submit"> -->
+          <!-- <button id="submit">Buat Tabel</button> -->
+          <!-- <input type="submit" id="submit" name="submit" value="Buat Tabel">
+        </fieldset> -->
+      </form>
+      <button id="submit">Buat Tabel</button>
+    </section>
+    <article class="result">
+      <ul >
+        <div class="table">
 
+        </div>
+      </ul>
+    </article>
   </body>
 </html>
